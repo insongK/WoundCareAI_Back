@@ -1,0 +1,23 @@
+# Python 기본
+__pycache__/
+*.py[cod]
+*.so
+
+# 가상환경
+venv/
+
+# 환경변수 파일
+.env
+
+# 에디터별
+.vscode/
+.idea/
+*.swp
+
+# OS별
+.DS_Store
+Thumbs.db
+
+# 테스트/로그 파일
+*.log
+*.tmp
