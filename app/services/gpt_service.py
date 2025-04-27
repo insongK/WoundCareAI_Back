@@ -27,7 +27,11 @@ async def generate_gpt_response(file: UploadFile = None, description: str = "") 
             '  "type": "question",\n'
             '  "question": "question text to ask the user"\n'
             "}\n\n"
-            "Never mix result and question together. Choose only one per message."
+            "Rules:\n"
+            "1. You can ask follow-up questions, but you must conclude with a final analysis within 5 user interactions.\n"
+            "2. Even if the user's answers are incomplete, you must provide the best possible analysis by the 5th turn.\n"
+            "3. Never exceed 5 total user interactions.\n"
+            "4. Always strictly follow the JSON format."
         )
     }
 
